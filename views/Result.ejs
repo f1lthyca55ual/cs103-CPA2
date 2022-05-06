@@ -1,0 +1,16 @@
+<table class="table table-bordered table-striped">
+    <tbody>
+      <% for (person of players ){%>
+        <tr>
+          <td><%= person.First_name  %></td>
+          <td><%= person.Last_name  %></td>
+          <td><%= person.Title  %></td>
+          <td><%= person.Elo  %> </td>
+          <td><%= person.Country  %> </td>
+        </tr>
+      <% } %>
+    </tbody>
+  </table>
+  <pre><%= JSON.stringify(players,null,5) %>
+  </pre>
+  
